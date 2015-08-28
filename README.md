@@ -144,11 +144,23 @@ This is an example of how to use most features of the minilab scratch extension:
 First run:
 
 >$roscore
+
 >$roslaunch minilab_launch minilab_gazebo.launch
+
 >$roslaunch minilab_launch minilab_state_publisher.launch
+
 >$roslaunch minilab_launch gmapping.launch
+
 >$roslaunch rosbridge_server rosbridge_websocket.launch
+
 >$rosrun web_video_server web_video_server
+
+![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2012:06:18.png)
+
+![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2012:08:33.png)
+
+![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2012:10:53.png)
+
 
 
 
