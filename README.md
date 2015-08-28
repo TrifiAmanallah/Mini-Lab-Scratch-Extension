@@ -112,11 +112,11 @@ Once this is done you can use the block after specifing the adress of the host a
 
 There is also a block to set the video parametres width,height and quality (1-100).This block must be executed befor the streaming block.
 
-After the execution of the two blocks the full adress to video would be something like that: 
+After the execution of the two blocks the full adress of the video would be something like that: 
 
 >http://'adress':'port'/stream_viewer?topic=/camera/rgb/image_raw&width='specified_width'&height='specified_height'&quality='specified_quality'
 
-This is an example of live video streaming:
+This is an example of live video streaming from gazebo:
 
 ![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2011:20:58.png)
 
