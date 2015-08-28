@@ -65,7 +65,7 @@ Also dont forget to start the roscore node and the Minilab's gazebo simulation:
 After starting the Connection, we can start Moving the robot using these blocks:
 (The block takes two parametres one for the direction and one for the speed, the command would be something like this NewPosition=OldPosition+speed)
 
-You can find a keyboard Teleop example on the following link:
+This is an example of keyboard teleop:
 
 ![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2011:00:03.png)
 
@@ -94,7 +94,7 @@ The extension provide all tools needed to use the laser sensor of the minilab Ro
 ![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2010:52:20.png)
 
 These blocks could be used for diffrents applications like obstacle avoidance,map scaning,...
-You can find an example for obstacle detection on the following link:
+This is an example of obstacle detection:
 
 ![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2011:13:24.png)
 
@@ -115,7 +115,7 @@ After the execution of the two blocks the full adress to video would be somethin
 
 >http://'adress':'port'/stream_viewer?topic=/camera/rgb/image_raw&width='specified_width'&height='specified_height'&quality='specified_quality'
 
-You can find an example on the following link:
+This is an example of live video streaming:
 
 ![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2011:20:58.png)
 
@@ -133,11 +133,23 @@ After specifing the adress and port wich by the way are the same parametres of t
 
 There is also a block to set the map parametres width,height and refresh rate (sec).This block must be executed befor the Map streaming block.
 
-You can find an example on the following link:
+This is an example of live Map scaning:
 
 ![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2011:27:07.png)
 
 N.B There might be some Javascript related issues with the refresh function of the map's popup window , so you might need to refresh the Map streaming block manually in order to view the real time advancement of the scaning process. 
+##All in one Example
+This is an example of how to use most features of the minilab scratch extension:
+
+First run:
+
+>$roscore
+>$roslaunch minilab_launch minilab_gazebo.launch
+>$roslaunch minilab_launch minilab_state_publisher.launch
+>$roslaunch minilab_launch gmapping.launch
+>$roslaunch rosbridge_server rosbridge_websocket.launch
+>$rosrun web_video_server web_video_server
+
 
 
   
