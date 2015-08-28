@@ -45,9 +45,13 @@ Once this is done, you can use the connection Block to start the connection with
 (the block takes two parameters the host adress and the communication port, the full adress would be
 ws://adress:port) 
 
+![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2008:59:28.png) 
+
 In case of problems you can view the Log messages using the JavaScript Console 
 (To start the console on Google chrome: ctrl+maj+j )
 The extension also provide a Hat block that return true if the connection is succefully established:
+
+![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2009:00:44.png)
 
 N.B: Most of the extension's blocks wont be able to work unless the connection is succefully established.
 Also dont forget to start the roscore node and the Minilab's gazebo simulation:
@@ -63,8 +67,12 @@ After starting the Connection, we can start Moving the robot using these blocks:
 
 You can find a keyboard Teleop example on the following link:
 
+![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2011:00:03.png)
+
 ##Reading the robot position:
 The extension provide differents reporter block to allow reading of the robot's position and orientation on a 3d coordinates system.All values are in meters. 
+
+![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2010:50:09.png)
 
 ##Reading Values from the laser sensor:
 The extension provide all tools needed to use the laser sensor of the minilab Robot. These tools are a set of reporters blocks that allow access to these vales:
@@ -81,7 +89,15 @@ The extension provide all tools needed to use the laser sensor of the minilab Ro
 
 *Finally the range of a specied angle [m]
 
+![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2010:51:30.png)
+
+![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2010:52:20.png)
+
 These blocks could be used for diffrents applications like obstacle avoidance,map scaning,...
+You can find an example for obstacle detection on the following link:
+
+[!Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2011:13:24.png)
+
 ##Streaming live video from Minilab/Gazebo:
 The extension provide a block that can stream live video on a new popup window.This block uses the web_video_server package wich should be installed on your robot or your Gazebo's host computer. Instructions could be found here:
 
@@ -99,6 +115,10 @@ After the execution of the two blocks the full adress to video would be somethin
 
 >http://'adress':'port'/stream_viewer?topic=/camera/rgb/image_raw&width='specified_width'&height='specified_height'&quality='specified_quality'
 
+You can find an example on the following link:
+
+[!Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2011:20:58.png)
+
 ##Streaming Map Scaning from Minilab/gazebo:
 The extension provide a block that can stream real time map scaning with a visualisation of the robot's position.
 To be able to use this block you need first to run these commands on your robot or your gazebo's host computer:
@@ -112,6 +132,10 @@ To be able to use this block you need first to run these commands on your robot 
 After specifing the adress and port wich by the way are the same parametres of the connection block, a popup window should appear containing a visulisation of the robot's posion and the map scaning process.
 
 There is also a block to set the map parametres width,height and refresh rate (sec).This block must be executed befor the Map streaming block.
+
+You can find an example on the following link:
+
+[!Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2011:27:07.png)
 
 N.B There might be some Javascript related issues with the refresh function of the map's popup window , so you might need to refresh the Map streaming block manually in order to view the real time advancement of the scaning process. 
 
