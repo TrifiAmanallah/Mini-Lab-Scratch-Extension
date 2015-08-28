@@ -96,7 +96,7 @@ The extension provide all tools needed to use the laser sensor of the minilab Ro
 These blocks could be used for diffrents applications like obstacle avoidance,map scaning,...
 You can find an example for obstacle detection on the following link:
 
-[!Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2011:13:24.png)
+![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2011:13:24.png)
 
 ##Streaming live video from Minilab/Gazebo:
 The extension provide a block that can stream live video on a new popup window.This block uses the web_video_server package wich should be installed on your robot or your Gazebo's host computer. Instructions could be found here:
@@ -117,7 +117,7 @@ After the execution of the two blocks the full adress to video would be somethin
 
 You can find an example on the following link:
 
-[!Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2011:20:58.png)
+![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2011:20:58.png)
 
 ##Streaming Map Scaning from Minilab/gazebo:
 The extension provide a block that can stream real time map scaning with a visualisation of the robot's position.
@@ -135,7 +135,7 @@ There is also a block to set the map parametres width,height and refresh rate (s
 
 You can find an example on the following link:
 
-[!Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2011:27:07.png)
+![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2011:27:07.png)
 
 N.B There might be some Javascript related issues with the refresh function of the map's popup window , so you might need to refresh the Map streaming block manually in order to view the real time advancement of the scaning process. 
 
