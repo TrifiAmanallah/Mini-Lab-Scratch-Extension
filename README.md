@@ -30,7 +30,7 @@ Or you can do it manually:
  That's it!
  
 #Using the minilab's sratch extension:
-This tutorial will show how to use the Mini-Lab's scratch Extension with the Gazebo simulator. Thus to use the extension with the Minilab Robot, you can just follow the same instructions and specify the right adress and port.
+This tutorial will show how to use the Mini-Lab's scratch Extension with the Gazebo simulator. Thus to use the extension with the Minilab Robot, you can just follow the same instructions and specify the wright adress and port.
 ## Connect to the Minilab/Gazebo:
 The extension uses  the ROS JavaScript Library (roslibjs) witch is the core JavaScript library for interacting with ROS from the browser. It uses WebSockets to connect with rosbridge and provides publishing, subscribing, service calls, actionlib, TF, URDF parsing, and other essential ROS functionality.
 So to be able to use the extension you need to have the rosbridge_server package installed on your Robot or your  Gazebo's host Computer, you can learn how to do that here:
@@ -90,10 +90,10 @@ The extension provide all tools needed to use the laser sensor of the minilab Ro
 *Finally the range of a specied angle [m]
 
 ![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2010:51:30.png)
-
 ![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2010:52:20.png)
 
 These blocks could be used for diffrents applications like obstacle avoidance,map scaning,...
+
 This is an example of obstacle detection:
 
 ![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2011:13:24.png)
