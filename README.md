@@ -49,6 +49,7 @@ ws://adress:port)
 
 In case of problems you can view the Log messages using the JavaScript Console 
 (To start the console on Google chrome: ctrl+maj+j )
+
 The extension also provide a Hat block that return true if the connection is succefully established:
 
 ![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2009:00:44.png)
