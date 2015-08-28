@@ -1,7 +1,10 @@
 # Mini-Lab-Scratch-Extension
 Scource code of the Minilab's Sratch Extension.
+
 Developped by Amanallah Trifi (T.amanallah1992@gmail.com)
+
 for Enova Robotics (www.enovarobotics.eu/)
+
 #Using ScratchX :
 Scratch is a programming language and online community where you can create your own interactive stories, games, and animations. ScratchX is a separate experimental platform built to test experimental Scratch features, also known as Experimental Extensions. There is no login or community component to ScratchX, and projects created within ScratchX can only be run on ScratchX.
 ScratchX is a platform that enables people to test experimental functionality built by developers for the visual programming language Scratch.
