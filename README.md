@@ -163,11 +163,17 @@ First run:
 ![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2012:10:53.png)
 
 
+To open the example: 
 
+1/go to: http://scratchx.org/?url=http://sbx-share.gregorywickham.com/projects/6.sbx#scratch
 
+2/Then More Blocks-> load experimental extension-> open an extension URL
+
+3/Past the link :https://rawgit.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/master/Minilab_Scratch.js 
   
- 
- 
+4/Press open 
+
+If there were issues you can check the JavaConsole for log messages.
  
  
  
