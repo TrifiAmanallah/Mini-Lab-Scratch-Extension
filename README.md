@@ -1,5 +1,5 @@
 # Mini-Lab-Scratch-Extension
-Scource code of the Minilab's Sratch Extension.
+Scource code of the Minilab's Sratch Extension(https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension)
 
 Minilab Robot (http://wiki.ros.org/Mini-Lab)
 
@@ -29,14 +29,18 @@ Or you can do it manually:
  
  That's it!
  
- #Using the minilab's sratch extension:
- This tutorial will show how to use the Mini-Lab's scratch Extension with the Gazebo simulator. Thus to use the extension with the Minilab Robot, you can just follow the same instructions.
- ## Connect to the Robot/Gazebo:
+#Using the minilab's sratch extension:
+This tutorial will show how to use the Mini-Lab's scratch Extension with the Gazebo simulator. Thus to use the extension with the Minilab Robot, you can just follow the same instructions and specify the right adress and port.
+## Connect to the Minilab/Gazebo:
 The extension uses  the ROS JavaScript Library (roslibjs) witch is the core JavaScript library for interacting with ROS from the browser. It uses WebSockets to connect with rosbridge and provides publishing, subscribing, service calls, actionlib, TF, URDF parsing, and other essential ROS functionality.
-So to be able to use the extension you need to have the rosbridge_server package installed on your Robot or your   Gazebo's host Computer, you can learn how to do that here:
+So to be able to use the extension you need to have the rosbridge_server package installed on your Robot or your  Gazebo's host Computer, you can learn how to do that here:
+
 http://wiki.ros.org/rosbridge_server
+
 Then you need to launch The rosbridge server using the following command:
-roslaunch rosbridge_server rosbridge_websocket.launch
+
+$roslaunch rosbridge_server rosbridge_websocket.launch
+
 Once this is done, you can use the connection Block to start the connection with the robot/gazebo:
 (the block takes two parameters the host adress and the communication port, the full adress would be
 ws://adress:port) 
@@ -46,11 +50,15 @@ In case of problems you can view the Log messages using the JavaScript Console
 The extension also provide a Hat block that return true if the connection is succefully established:
 
 N.B: Most of the extension's blocks wont be able to work unless the connection is succefully established.
-Also dont forget to start the roscore node and the Minilab's gazebo simulation
+Also dont forget to start the roscore node and the Minilab's gazebo simulation:
+
+$roscore
+$roslaunch minilab_launch minilab_gazebo.launch
+
 (further information on how to do this: http://wiki.ros.org/Mini-Lab/Tutorials )
 ##Moving the Robot:
 After starting the Connection, we can start Moving the robot using these blocks:
-(the block takes two parametres one for the direction and one for the speed, the command would be something like this NewPosition=OldPosition+speed)
+(The block takes two parametres one for the direction and one for the speed, the command would be something like this NewPosition=OldPosition+speed)
 
 You can find a keyboard Teleop example on the following link:
 
