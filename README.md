@@ -39,7 +39,7 @@ http://wiki.ros.org/rosbridge_server
 
 Then you need to launch The rosbridge server using the following command:
 
-$roslaunch rosbridge_server rosbridge_websocket.launch
+>$roslaunch rosbridge_server rosbridge_websocket.launch
 
 Once this is done, you can use the connection Block to start the connection with the robot/gazebo:
 (the block takes two parameters the host adress and the communication port, the full adress would be
@@ -52,8 +52,9 @@ The extension also provide a Hat block that return true if the connection is suc
 N.B: Most of the extension's blocks wont be able to work unless the connection is succefully established.
 Also dont forget to start the roscore node and the Minilab's gazebo simulation:
 
-$roscore
-$roslaunch minilab_launch minilab_gazebo.launch
+>$roscore
+
+>$roslaunch minilab_launch minilab_gazebo.launch
 
 (further information on how to do this: http://wiki.ros.org/Mini-Lab/Tutorials )
 ##Moving the Robot:
@@ -83,21 +84,31 @@ The extension provide all tools needed to use the laser sensor of the minilab Ro
 These blocks could be used for diffrents applications like obstacle avoidance,map scaning,...
 ##Streaming live video from Minilab/Gazebo:
 The extension provide a block that can stream live video on a new popup window.This block uses the web_video_server package wich should be installed on your robot or your Gazebo's host computer. Instructions could be found here:
+
 http://wiki.ros.org/web_video_server
+
 Then you have to start the web video server using this command:
-rosrun web_video_server web_video_server
+
+>$rosrun web_video_server web_video_server
+
 Once this is done you can use the block after specifing the adress of the host and the communication port.
 
 There is also a block to set the video parametres width,height and quality (1-100).This block must be executed befor the streaming block.
 
 After the execution of the two blocks the full adress to video would be something like that: 
-http://'adress':'port'/stream_viewer?topic=/camera/rgb/image_raw&width='specified_width'&height='specified_height'&quality='specified_quality'
+
+>http://'adress':'port'/stream_viewer?topic=/camera/rgb/image_raw&width='specified_width'&height='specified_height'&quality='specified_quality'
+
 ##Streaming Map Scaning from Minilab/gazebo:
 The extension provide a block that can stream real time map scaning with a visualisation of the robot's position.
 To be able to use this block you need first to run these commands on your robot or your gazebo's host computer:
-$ roslaunch minilab_description minilab_state_publisher.launch
-$ roslaunch minilab_navigation gmapping.launch
+
+>$ roslaunch minilab_launch minilab_state_publisher.launch
+
+>$ roslaunch minilab_launch gmapping.launch
+
 (Further information could be found here: http://wiki.ros.org/Mini-Lab/Tutorials/Laser_mapping)
+
 After specifing the adress and port wich by the way are the same parametres of the connection block, a popup window should appear containing a visulisation of the robot's posion and the map scaning process.
 
 There is also a block to set the map parametres width,height and refresh rate (sec).This block must be executed befor the Map streaming block.
