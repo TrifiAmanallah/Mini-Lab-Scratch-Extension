@@ -7,12 +7,14 @@ Enova Robotics (www.enovarobotics.eu/)
 
 Developped by Amanallah Trifi (T.amanallah1992@gmail.com)
 
-#Using ScratchX :
+# Using ScratchX :
+Link to Scratch: http://scratchx.org/
+
 Scratch is a programming language and online community where you can create your own interactive stories, games, and animations. ScratchX is a separate experimental platform built to test experimental Scratch features, also known as Experimental Extensions. There is no login or community component to ScratchX, and projects created within ScratchX can only be run on ScratchX.
 ScratchX is a platform that enables people to test experimental functionality built by developers for the visual programming language Scratch.
 The ScratchX interface is very similar to the Scratch 2.0 interface with the exception of a set of features for loading Experimental Extensions.
 
-#Load the Mini-Lab's SratchX Extension: 
+# Load the Mini-Lab's SratchX Extension: 
 To load the minilab's extension just click on the link:
 
 http://scratchx.org/?url=https://rawgit.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/master/Minilab_Scratch.js
@@ -29,7 +31,7 @@ Or you can do it manually:
  
  That's it!
  
-#Using the minilab's sratch extension:
+# Using the minilab's sratch extension:
 This tutorial will show how to use the Mini-Lab's scratch Extension with the Gazebo simulator. Thus to use the extension with the Minilab Robot, you can just follow the same instructions and specify the wright adress and port.
 ## Connect to the Minilab/Gazebo:
 The extension uses  the ROS JavaScript Library (roslibjs) witch is the core JavaScript library for interacting with ROS from the browser. It uses WebSockets to connect with rosbridge and provides publishing, subscribing, service calls, actionlib, TF, URDF parsing, and other essential ROS functionality.
@@ -62,7 +64,7 @@ Also dont forget to start the roscore node and the Minilab's gazebo simulation:
 >$roslaunch minilab_launch minilab_gazebo.launch
 
 (further information on how to do this: http://wiki.ros.org/Mini-Lab/Tutorials )
-##Moving the Robot:
+## Moving the Robot:
 After starting the Connection, we can start Moving the robot using these blocks:
 (The block takes two parametres one for the direction and one for the speed, the command would be something like this NewPosition=OldPosition+speed)
 
@@ -70,12 +72,12 @@ This is an example of keyboard teleop:
 
 ![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2011:00:03.png)
 
-##Reading the robot position:
+## Reading the robot position:
 The extension provide differents reporter block to allow reading of the robot's position and orientation on a 3d coordinates system.All values are in meters. 
 
 ![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2010:50:09.png)
 
-##Reading Values from the laser sensor:
+## Reading Values from the laser sensor:
 The extension provide all tools needed to use the laser sensor of the minilab Robot. These tools are a set of reporters blocks that allow access to these vales:
 
 *start/end angle of the scan [rad]
@@ -99,7 +101,7 @@ This is an example of obstacle detection:
 
 ![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2011:13:24.png)
 
-##Streaming live video from Minilab/Gazebo:
+## Streaming live video from Minilab/Gazebo:
 The extension provide a block that can stream live video on a new popup window.This block uses the web_video_server package wich should be installed on your robot or your Gazebo's host computer. Instructions could be found here:
 
 http://wiki.ros.org/web_video_server
@@ -120,7 +122,7 @@ This is an example of live video streaming from gazebo:
 
 ![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2011:20:58.png)
 
-##Streaming Map Scaning from Minilab/gazebo:
+## Streaming Map Scaning from Minilab/gazebo:
 The extension provide a block that can stream real time map scaning with a visualisation of the robot's position.
 To be able to use this block you need first to run these commands on your robot or your gazebo's host computer:
 
@@ -139,7 +141,7 @@ This is an example of live Map scaning:
 ![Alt text](https://github.com/TrifiAmanallah/Mini-Lab-Scratch-Extension/blob/master/Screen%20shots/Screenshot%20from%202015-08-28%2011:27:07.png)
 
 N.B There might be some Javascript related issues with the refresh function of the map's popup window , so you might need to refresh the Map streaming block manually in order to view the real time advancement of the scaning process. 
-##All in one Example
+## All in one Example
 This is an example of how to use most features of the minilab scratch extension:
 
 First run:
